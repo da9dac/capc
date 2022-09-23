@@ -1,0 +1,2384 @@
+doctype
+html
+  head
+    meta(charset='UTF-8')
+    title= title
+    meta(name='viewport' content='width=device-width, user-scalable=no')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    link(rel='stylesheet' href='/profile.css')
+    script(type="text/javascript" src='js/profile.js')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU' crossorigin='anonymous')
+    script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+    script(src='https://code.jquery.com/ui/1.13.1/jquery-ui.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    script(src='https://s.codepen.io/assets/libs/modernizr.js')
+    script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD4dgkqq4O-82uOs5IE6bLpBEqKjpkeJYE&callback=initMap&region=kr')
+    script(type="text/javascript" src='map.js')
+    script(type="text/javascript" src='btnsix.js')
+    script(type="text/javascript" src='fullcalendar/main.js')
+    script(type="text/javascript" src='fullcalendar/locales-all.js')
+    script(type="text/javascript" src='js/profilecal.js')
+    script(type="text/javascript" src='js/caltwo.js')
+    link(rel='stylesheet' href='fullcalendar/main.css')
+    link(rel='stylesheet' href='btn.css')
+  body
+    .container
+      .logo
+        a(href='https://www.cku.ac.kr/sites/cku/index.do' title=`학교 홈페이지` target='_blank')
+          img(src='images/logo.png' alt='홈으로')
+      case user.fk_department_name
+        when `소프트웨어`:  .cont.s--inactive
+                            // cont inner start
+                            .cont__inner
+                              // el start 내캘린더
+                              .el
+                                .el__overflow
+                                  .el__inner
+                                    .el__bg
+                                    .el__preview-cont
+                                      h2.el__heading 학<br>사<br>일<br>정
+                                    .el__content
+                                      .el__text 학사일정
+                                        #calendar
+                                      .el__close-btn
+                                .el__index
+                                  .el__index-back 
+                                  .el__index-front
+                                    .el__index-overlay(data-index='1') 
+                              // el end
+                              // el start 교육과정
+                              .el
+                                .el__overflow
+                                  .el__inner
+                                    .el__bg
+                                    .el__preview-cont
+                                      h2.el__heading 교<br>육<br>과<br>정
+                                    .el__content
+                                      .el__text 소프트웨어학과 교육과정
+                                      .twrapper
+                                        .kktable
+                                          .row.header.green
+                                            .cell
+                                              | 분류
+                                            .cell
+                                              | 과목명
+                                            .cell
+                                              | 학년-학기
+                                            .cell
+                                              | 학점
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 사제동행세미나 1
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 0.5
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 전공필수
+                                            .cell(data-title='과목명')
+                                              | 과목명
+                                            .cell(data-title='학년-학기')
+                                              | 1 - 1
+                                            .cell(data-title='학점')
+                                              | 3
+                                      .el__close-btn
+                                .el__index
+                                  .el__index-back 
+                                  .el__index-front
+                                    .el__index-overlay(data-index='2') 
+                              // el end
+                              // el start 내연락처
+                              .el
+                                .el__overflow
+                                  .el__inner
+                                    .el__bg
+                                    .el__preview-cont
+                                      h2.el__heading 내<br>연<br>락<br>처
+                                    .el__content
+                                      .el__text 내 연락처
+                                      .phoneswrapper
+                                        .kktable
+                                          .row.header.blue
+                                            .cell
+                                              | 분류
+                                            .cell
+                                              | 이름
+                                            .cell
+                                              | 위치
+                                            .cell
+                                              | 전화번호
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 학과사무실
+                                            .cell(data-title='이름')
+                                              | 소프트웨어학과 교학팀
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 033-649-7430
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 학과사무실
+                                            .cell(data-title='이름')
+                                              | 소프트웨어학과 교학팀
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 033-649-7430
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 학과사무실
+                                            .cell(data-title='이름')
+                                              | 소프트웨어학과 교학팀
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 033-649-7430
+                                          .row
+                                            .cell(data-title='분류')
+                                              | 학과사무실
+                                            .cell(data-title='이름')
+                                              | 소프트웨어학과 교학팀
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 033-649-7430
+                                        .kktable
+                                          .row.header.blue
+                                            .cell
+                                              | 교수명
+                                            .cell
+                                              | 위치
+                                            .cell
+                                              | 전화번호
+                                            .cell
+                                              | 이메일
+                                          .row
+                                            .cell(data-title='교수명')
+                                              | 이름
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 010-0000-0000
+                                            .cell(data-title='이메일')
+                                              | email@cku.ac.kr
+                                          .row
+                                            .cell(data-title='교수명')
+                                              | 이름
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 010-0000-0000
+                                            .cell(data-title='이메일')
+                                              | email@cku.ac.kr
+                                          .row
+                                            .cell(data-title='교수명')
+                                              | 이름
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 010-0000-0000
+                                            .cell(data-title='이메일')
+                                              | email@cku.ac.kr
+                                          .row
+                                            .cell(data-title='교수명')
+                                              | 이름
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 010-0000-0000
+                                            .cell(data-title='이메일')
+                                              | email@cku.ac.kr
+                                          .row
+                                            .cell(data-title='교수명')
+                                              | 이름
+                                            .cell(data-title='위치')
+                                              | 가브리엘관
+                                            .cell(data-title='전화번호')
+                                              | 010-0000-0000
+                                            .cell(data-title='이메일')
+                                              | email@cku.ac.kr
+                                      .el__close-btn
+                                .el__index
+                                  .el__index-back 
+                                  .el__index-front
+                                    .el__index-overlay(data-index='3') 
+                              // el end
+                              // el start 스마트맵
+                              .el
+                                .el__overflow
+                                  .el__inner
+                                    .el__bg
+                                    .el__preview-cont
+                                      h2.el__heading 스<br>마<br>트<br>맵
+                                    .el__content
+                                      .el__text 스마트맵
+                                        #map
+                                      .btns_bar
+                                        select#mapList(name='mapList' onchange='mapSelector(this.value)')
+                                          option 보고 싶은 지도를 선택해주세요
+                                          option(value='1') 교내 건물 위치
+                                          option(value='2') 학교 근처 음식집 추천
+                                          option(value='3') 학교 근처 편의시설
+                                          option(value='4') 강릉 편의시설
+                                          option(value='5') 강릉 장소 추천
+                                      .el__close-btn
+                                .el__index
+                                  .el__index-back 
+                                  .el__index-front
+                                    .el__index-overlay(data-index='4') 
+                              // el end
+                              // el start 임시메뉴
+                              .el
+                                .el__overflow
+                                  .el__inner
+                                    .el__bg
+                                    .el__preview-cont
+                                      h2.el__heading 임<br>시<br>메<br>뉴
+                                    .el__content
+                                      .el__text 임시메뉴
+                                        .centerer
+                                          .favorite
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                          .favorite
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                            a.btn-6(onclick="window.open('')" title=``)
+                                              | 임시
+                                              span
+                                      .el__close-btn
+                                .el__index
+                                  .el__index-back 
+                                  .el__index-front
+                                    .el__index-overlay(data-index='5')
+                              // el end
+                            // cont inner end
+                            a.icon-link(onclick="location.href='/'" title=`돌아가기`)
+                              img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/back-icon.png')
+                            a.icon-link.icon-link--department(onclick="window.open('https://www.cku.ac.kr/sites/software/index.do')" title=`학과페이지`)
+                              img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/home-icon.png')
+        when `건축`:  .cont.s--inactive
+                      // cont inner start
+                      .cont__inner
+                        // el start 내캘린더
+                        .el
+                          .el__overflow
+                            .el__inner
+                              .el__bg
+                              .el__preview-cont
+                                h2.el__heading 학<br>사<br>일<br>정
+                              .el__content
+                                .el__text 학사일정
+                                  #calendar
+                                .el__close-btn
+                          .el__index
+                            .el__index-back 
+                            .el__index-front
+                              .el__index-overlay(data-index='1') 
+                        // el end
+                        // el start 교육과정
+                        .el
+                          .el__overflow
+                            .el__inner
+                              .el__bg
+                              .el__preview-cont
+                                h2.el__heading 교<br>육<br>과<br>정
+                              .el__content
+                                .el__text 건축학과 교육과정
+                                .twrapper
+                                  .kktable
+                                    .row.header.green
+                                      .cell
+                                        | 분류
+                                      .cell
+                                        | 과목명
+                                      .cell
+                                        | 학년-학기
+                                      .cell
+                                        | 학점
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 사제동행세미나 1
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 0.5
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 전공필수
+                                      .cell(data-title='과목명')
+                                        | 과목명
+                                      .cell(data-title='학년-학기')
+                                        | 1 - 1
+                                      .cell(data-title='학점')
+                                        | 3
+                                .el__close-btn
+                          .el__index
+                            .el__index-back 
+                            .el__index-front
+                              .el__index-overlay(data-index='2') 
+                        // el end
+                        // el start 내연락처
+                        .el
+                          .el__overflow
+                            .el__inner
+                              .el__bg
+                              .el__preview-cont
+                                h2.el__heading 내<br>연<br>락<br>처
+                              .el__content
+                                .el__text 내 연락처
+                                .phoneswrapper
+                                  .kktable
+                                    .row.header.blue
+                                      .cell
+                                        | 분류
+                                      .cell
+                                        | 이름
+                                      .cell
+                                        | 위치
+                                      .cell
+                                        | 전화번호
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 학과사무실
+                                      .cell(data-title='이름')
+                                        | 소프트웨어학과 교학팀
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 033-649-7430
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 학과사무실
+                                      .cell(data-title='이름')
+                                        | 소프트웨어학과 교학팀
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 033-649-7430
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 학과사무실
+                                      .cell(data-title='이름')
+                                        | 소프트웨어학과 교학팀
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 033-649-7430
+                                    .row
+                                      .cell(data-title='분류')
+                                        | 학과사무실
+                                      .cell(data-title='이름')
+                                        | 소프트웨어학과 교학팀
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 033-649-7430
+                                  .kktable
+                                    .row.header.blue
+                                      .cell
+                                        | 교수명
+                                      .cell
+                                        | 위치
+                                      .cell
+                                        | 전화번호
+                                      .cell
+                                        | 이메일
+                                    .row
+                                      .cell(data-title='교수명')
+                                        | 이름
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 010-0000-0000
+                                      .cell(data-title='이메일')
+                                        | email@cku.ac.kr
+                                    .row
+                                      .cell(data-title='교수명')
+                                        | 이름
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 010-0000-0000
+                                      .cell(data-title='이메일')
+                                        | email@cku.ac.kr
+                                    .row
+                                      .cell(data-title='교수명')
+                                        | 이름
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 010-0000-0000
+                                      .cell(data-title='이메일')
+                                        | email@cku.ac.kr
+                                    .row
+                                      .cell(data-title='교수명')
+                                        | 이름
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 010-0000-0000
+                                      .cell(data-title='이메일')
+                                        | email@cku.ac.kr
+                                    .row
+                                      .cell(data-title='교수명')
+                                        | 이름
+                                      .cell(data-title='위치')
+                                        | 가브리엘관
+                                      .cell(data-title='전화번호')
+                                        | 010-0000-0000
+                                      .cell(data-title='이메일')
+                                        | email@cku.ac.kr
+                                .el__close-btn
+                          .el__index
+                            .el__index-back 
+                            .el__index-front
+                              .el__index-overlay(data-index='3') 
+                        // el end
+                        // el start 스마트맵
+                        .el
+                          .el__overflow
+                            .el__inner
+                              .el__bg
+                              .el__preview-cont
+                                h2.el__heading 스<br>마<br>트<br>맵
+                              .el__content
+                                .el__text 스마트맵
+                                  #map
+                                .btns_bar
+                                  select#mapList(name='mapList' onchange='mapSelector(this.value)')
+                                    option 보고 싶은 지도를 선택해주세요
+                                    option(value='1') 교내 건물 위치
+                                    option(value='2') 학교 근처 음식집 추천
+                                    option(value='3') 학교 근처 편의시설
+                                    option(value='4') 강릉 편의시설
+                                    option(value='5') 강릉 장소 추천
+                                .el__close-btn
+                          .el__index
+                            .el__index-back 
+                            .el__index-front
+                              .el__index-overlay(data-index='4') 
+                        // el end
+                        // el start 임시메뉴
+                        .el
+                          .el__overflow
+                            .el__inner
+                              .el__bg
+                              .el__preview-cont
+                                h2.el__heading 임<br>시<br>메<br>뉴
+                              .el__content
+                                .el__text 임시메뉴
+                                  .centerer
+                                    .favorite
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                    .favorite
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                      a.btn-6(onclick="window.open('')" title=``)
+                                        | 임시
+                                        span
+                                .el__close-btn
+                          .el__index
+                            .el__index-back 
+                            .el__index-front
+                              .el__index-overlay(data-index='5')
+                        // el end
+                      // cont inner end
+                        a.icon-link(onclick="location.href='/'")
+                          img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/back-icon.png')
+                        a.icon-link.icon-link--department(onclick="window.open('https://www.cku.ac.kr/sites/arch/index.do')")
+                          img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/home-icon.png')
+        when `토목공`:  .cont.s--inactive
+                        // cont inner start
+                        .cont__inner
+                          // el start 내캘린더
+                          .el
+                            .el__overflow
+                              .el__inner
+                                .el__bg
+                                .el__preview-cont
+                                  h2.el__heading 학<br>사<br>일<br>정
+                                .el__content
+                                  .el__text 학사일정
+                                    #calendar
+                                  .el__close-btn
+                            .el__index
+                              .el__index-back 
+                              .el__index-front
+                                .el__index-overlay(data-index='1') 
+                          // el end
+                          // el start 교육과정
+                          .el
+                            .el__overflow
+                              .el__inner
+                                .el__bg
+                                .el__preview-cont
+                                  h2.el__heading 교<br>육<br>과<br>정
+                                .el__content
+                                  .el__text 토목공학과 교육과정
+                                  .twrapper
+                                    .kktable
+                                      .row.header.green
+                                        .cell
+                                          | 분류
+                                        .cell
+                                          | 과목명
+                                        .cell
+                                          | 학년-학기
+                                        .cell
+                                          | 학점
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 사제동행세미나 1
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 0.5
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 전공필수
+                                        .cell(data-title='과목명')
+                                          | 과목명
+                                        .cell(data-title='학년-학기')
+                                          | 1 - 1
+                                        .cell(data-title='학점')
+                                          | 3
+                                  .el__close-btn
+                            .el__index
+                              .el__index-back 
+                              .el__index-front
+                                .el__index-overlay(data-index='2') 
+                          // el end
+                          // el start 내연락처
+                          .el
+                            .el__overflow
+                              .el__inner
+                                .el__bg
+                                .el__preview-cont
+                                  h2.el__heading 내<br>연<br>락<br>처
+                                .el__content
+                                  .el__text 내 연락처
+                                  .phoneswrapper
+                                    .kktable
+                                      .row.header.blue
+                                        .cell
+                                          | 분류
+                                        .cell
+                                          | 이름
+                                        .cell
+                                          | 위치
+                                        .cell
+                                          | 전화번호
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 학과사무실
+                                        .cell(data-title='이름')
+                                          | 소프트웨어학과 교학팀
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 033-649-7430
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 학과사무실
+                                        .cell(data-title='이름')
+                                          | 소프트웨어학과 교학팀
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 033-649-7430
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 학과사무실
+                                        .cell(data-title='이름')
+                                          | 소프트웨어학과 교학팀
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 033-649-7430
+                                      .row
+                                        .cell(data-title='분류')
+                                          | 학과사무실
+                                        .cell(data-title='이름')
+                                          | 소프트웨어학과 교학팀
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 033-649-7430
+                                    .kktable
+                                      .row.header.blue
+                                        .cell
+                                          | 교수명
+                                        .cell
+                                          | 위치
+                                        .cell
+                                          | 전화번호
+                                        .cell
+                                          | 이메일
+                                      .row
+                                        .cell(data-title='교수명')
+                                          | 이름
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 010-0000-0000
+                                        .cell(data-title='이메일')
+                                          | email@cku.ac.kr
+                                      .row
+                                        .cell(data-title='교수명')
+                                          | 이름
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 010-0000-0000
+                                        .cell(data-title='이메일')
+                                          | email@cku.ac.kr
+                                      .row
+                                        .cell(data-title='교수명')
+                                          | 이름
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 010-0000-0000
+                                        .cell(data-title='이메일')
+                                          | email@cku.ac.kr
+                                      .row
+                                        .cell(data-title='교수명')
+                                          | 이름
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 010-0000-0000
+                                        .cell(data-title='이메일')
+                                          | email@cku.ac.kr
+                                      .row
+                                        .cell(data-title='교수명')
+                                          | 이름
+                                        .cell(data-title='위치')
+                                          | 가브리엘관
+                                        .cell(data-title='전화번호')
+                                          | 010-0000-0000
+                                        .cell(data-title='이메일')
+                                          | email@cku.ac.kr
+                                  .el__close-btn
+                            .el__index
+                              .el__index-back 
+                              .el__index-front
+                                .el__index-overlay(data-index='3') 
+                          // el end
+                          // el start 스마트맵
+                          .el
+                            .el__overflow
+                              .el__inner
+                                .el__bg
+                                .el__preview-cont
+                                  h2.el__heading 스<br>마<br>트<br>맵
+                                .el__content
+                                  .el__text 스마트맵
+                                    #map
+                                  .btns_bar
+                                    select#mapList(name='mapList' onchange='mapSelector(this.value)')
+                                      option 보고 싶은 지도를 선택해주세요
+                                      option(value='1') 교내 건물 위치
+                                      option(value='2') 학교 근처 음식집 추천
+                                      option(value='3') 학교 근처 편의시설
+                                      option(value='4') 강릉 편의시설
+                                      option(value='5') 강릉 장소 추천
+                                  .el__close-btn
+                            .el__index
+                              .el__index-back 
+                              .el__index-front
+                                .el__index-overlay(data-index='4') 
+                          // el end
+                          // el start 임시메뉴
+                          .el
+                            .el__overflow
+                              .el__inner
+                                .el__bg
+                                .el__preview-cont
+                                  h2.el__heading 임<br>시<br>메<br>뉴
+                                .el__content
+                                  .el__text 임시메뉴
+                                    .centerer
+                                      .favorite
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                      .favorite
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                        a.btn-6(onclick="window.open('')" title=``)
+                                          | 임시
+                                          span
+                                  .el__close-btn
+                            .el__index
+                              .el__index-back 
+                              .el__index-front
+                                .el__index-overlay(data-index='5')
+                          // el end
+                        // cont inner end
+                        a.icon-link(onclick="location.href='/'")
+                          img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/back-icon.png')
+                        a.icon-link.icon-link--department(onclick="window.open('https://www.cku.ac.kr/sites/civil/index.do')")
+                          img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/home-icon.png')
+        when `전자공`:  .cont.s--inactive
+                          // cont inner start
+                          .cont__inner
+                            // el start 내캘린더
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 학<br>사<br>일<br>정
+                                  .el__content
+                                    .el__text 학사일정
+                                      #calendar
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='1') 
+                            // el end
+                            // el start 교육과정
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 교<br>육<br>과<br>정
+                                  .el__content
+                                    .el__text 전자공학과 교육과정
+                                    .twrapper
+                                      .kktable
+                                        .row.header.green
+                                          .cell
+                                            | 분류
+                                          .cell
+                                            | 과목명
+                                          .cell
+                                            | 학년-학기
+                                          .cell
+                                            | 학점
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 사제동행세미나 1
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 0.5
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='2') 
+                            // el end
+                            // el start 내연락처
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 내<br>연<br>락<br>처
+                                  .el__content
+                                    .el__text 내 연락처
+                                    .phoneswrapper
+                                      .kktable
+                                        .row.header.blue
+                                          .cell
+                                            | 분류
+                                          .cell
+                                            | 이름
+                                          .cell
+                                            | 위치
+                                          .cell
+                                            | 전화번호
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                      .kktable
+                                        .row.header.blue
+                                          .cell
+                                            | 교수명
+                                          .cell
+                                            | 위치
+                                          .cell
+                                            | 전화번호
+                                          .cell
+                                            | 이메일
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='3') 
+                            // el end
+                            // el start 스마트맵
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 스<br>마<br>트<br>맵
+                                  .el__content
+                                    .el__text 스마트맵
+                                      #map
+                                    .btns_bar
+                                      select#mapList(name='mapList' onchange='mapSelector(this.value)')
+                                        option 보고 싶은 지도를 선택해주세요
+                                        option(value='1') 교내 건물 위치
+                                        option(value='2') 학교 근처 음식집 추천
+                                        option(value='3') 학교 근처 편의시설
+                                        option(value='4') 강릉 편의시설
+                                        option(value='5') 강릉 장소 추천
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='4') 
+                            // el end
+                            // el start 임시메뉴
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 임<br>시<br>메<br>뉴
+                                  .el__content
+                                    .el__text 임시메뉴
+                                      .centerer
+                                        .favorite
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                        .favorite
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='5')
+                            // el end
+                          // cont inner end
+                          a.icon-link(onclick="location.href='/'")
+                            img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/back-icon.png')
+                          a.icon-link.icon-link--department(onclick="window.open('https://www.cku.ac.kr/sites/eice/index.do')")
+                            img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/home-icon.png')
+        when `건축공`:  .cont.s--inactive
+                          // cont inner start
+                          .cont__inner
+                            // el start 내캘린더
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 학<br>사<br>일<br>정
+                                  .el__content
+                                    .el__text 학사일정
+                                      #calendar
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='1') 
+                            // el end
+                            // el start 교육과정
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 교<br>육<br>과<br>정
+                                  .el__content
+                                    .el__text 건축공학과 교육과정
+                                    .twrapper
+                                      .kktable
+                                        .row.header.green
+                                          .cell
+                                            | 분류
+                                          .cell
+                                            | 과목명
+                                          .cell
+                                            | 학년-학기
+                                          .cell
+                                            | 학점
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 사제동행세미나 1
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 0.5
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 전공필수
+                                          .cell(data-title='과목명')
+                                            | 과목명
+                                          .cell(data-title='학년-학기')
+                                            | 1 - 1
+                                          .cell(data-title='학점')
+                                            | 3
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='2') 
+                            // el end
+                            // el start 내연락처
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 내<br>연<br>락<br>처
+                                  .el__content
+                                    .el__text 내 연락처
+                                    .phoneswrapper
+                                      .kktable
+                                        .row.header.blue
+                                          .cell
+                                            | 분류
+                                          .cell
+                                            | 이름
+                                          .cell
+                                            | 위치
+                                          .cell
+                                            | 전화번호
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                        .row
+                                          .cell(data-title='분류')
+                                            | 학과사무실
+                                          .cell(data-title='이름')
+                                            | 소프트웨어학과 교학팀
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 033-649-7430
+                                      .kktable
+                                        .row.header.blue
+                                          .cell
+                                            | 교수명
+                                          .cell
+                                            | 위치
+                                          .cell
+                                            | 전화번호
+                                          .cell
+                                            | 이메일
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                        .row
+                                          .cell(data-title='교수명')
+                                            | 이름
+                                          .cell(data-title='위치')
+                                            | 가브리엘관
+                                          .cell(data-title='전화번호')
+                                            | 010-0000-0000
+                                          .cell(data-title='이메일')
+                                            | email@cku.ac.kr
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='3') 
+                            // el end
+                            // el start 스마트맵
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 스<br>마<br>트<br>맵
+                                  .el__content
+                                    .el__text 스마트맵
+                                      #map
+                                    .btns_bar
+                                      select#mapList(name='mapList' onchange='mapSelector(this.value)')
+                                        option 보고 싶은 지도를 선택해주세요
+                                        option(value='1') 교내 건물 위치
+                                        option(value='2') 학교 근처 음식집 추천
+                                        option(value='3') 학교 근처 편의시설
+                                        option(value='4') 강릉 편의시설
+                                        option(value='5') 강릉 장소 추천
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='4') 
+                            // el end
+                            // el start 임시메뉴
+                            .el
+                              .el__overflow
+                                .el__inner
+                                  .el__bg
+                                  .el__preview-cont
+                                    h2.el__heading 임<br>시<br>메<br>뉴
+                                  .el__content
+                                    .el__text 임시메뉴
+                                      .centerer
+                                        .favorite
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                        .favorite
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                          a.btn-6(onclick="window.open('')" title=``)
+                                            | 임시
+                                            span
+                                    .el__close-btn
+                              .el__index
+                                .el__index-back 
+                                .el__index-front
+                                  .el__index-overlay(data-index='5')
+                            // el end
+                          // cont inner end
+                          a.icon-link(onclick="location.href='/'")
+                            img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/back-icon.png')
+                          a.icon-link.icon-link--department(onclick="window.open('https://www.cku.ac.kr/sites/engineering/index.do')")
+                            img(src='https://icons.iconarchive.com/icons/custom-icon-design/mono-general-3/512/home-icon.png')
+script(src='js/profile.js')
+script(src='js/map.js')
+script(src='js/btnsix.js')
