@@ -8,7 +8,7 @@
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production PORT=80 pm2 start app.js -i 0",
-    "dev": "nodemon app"
+    "dev": "node"
   },
   "author": "YJKH",
   "license": "FPK",
