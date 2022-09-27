@@ -7,7 +7,7 @@ module.exports = (passport) => {
   });
 
   passport.deserializeUser((id, done) => {
-    Student.find({
+    Student.findOne({
       where: { id },
     })
       .then(user => done(null, user))
