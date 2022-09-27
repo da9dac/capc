@@ -9,7 +9,7 @@ const router = express.Router();
 router.post('/join', isNotLoggedIn, async (req, res, next) => {
   const { id, name, password, fk_department_name, fk_department_category, grade, year, phone, mail } = req.body;
   try {
-    const exUser = await Student.find({ where: { id } });
+    const exUser = await Student.findOne({ where: { id } });
     if (exUser) {
       req.flash('joinError', '이미 가입된 계정입니다.');
       return res.redirect('/qazwsx98@@');
