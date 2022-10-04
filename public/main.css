@@ -1,7 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Jua&family=Noto+Sans+KR:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
 }
 
 html,
@@ -9,16 +16,12 @@ body {
   margin: 0;
   padding: 0;
   height: 90%;
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans KR', sans-serif;
 }
 body {
   background-color: whitesmoke;
 }
-@media screen and (max-width: 500px) {
-  body {
-    background-color: whitesmoke;
-  }
-}
+
 
 .btn {
   display: inline-block;
@@ -36,20 +39,20 @@ body {
   font-size: 12px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .btn {
     display: inline-block;
     padding: 0 5px;
     margin-left: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
     background: white;
     border: 1px solid silver;
     color: #000;
-    height: 37px;
-    line-height: 37px;
+    height: 42px;
+    line-height: 30px;
     vertical-align: top;
     font-size: 12px;
   }
@@ -73,7 +76,7 @@ body {
   font-size: 12px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .btns {
     display: inline-block;
     float: right;
@@ -108,7 +111,7 @@ textarea {
   height: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
   .container {
     width: 800px;
     margin: 0 auto;
@@ -145,7 +148,7 @@ textarea {
   margin: 10px 10px 0px 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
   .profile-wrap {
     width: 280px;
     margin-bottom: 0;
@@ -162,7 +165,7 @@ textarea {
   background: #006276;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .profile {
     text-align: left;
     padding: 10px;
@@ -195,7 +198,7 @@ textarea {
   vertical-align: top;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 767px) {
   .timeline {
     width: 500px;
   }
@@ -222,11 +225,27 @@ textarea {
   position: relative;
   margin-bottom: 10px;
   text-align: center;
+  font-size: 4px;
 
   margin-right: 11px;
   margin-left:10px;
   border: 1px solid silver;
   background: #006276;
+}
+
+@media screen and (min-width: 767px) {
+  .homemenu {
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    margin-bottom: 10px;
+    text-align: center;
+  
+    margin-right: 11px;
+    margin-left:10px;
+    border: 1px solid silver;
+    background: #006276;
+  }
 }
 /*임시*/
 
@@ -256,7 +275,7 @@ textarea {
   cursor: pointer;
   padding: 18px;
   width: 800px;
-  text-align: left;
+  text-align: center;
   outline: none;
   font-size: 18px;
   border-radius: 10px 10px 0px 0px;
@@ -334,7 +353,7 @@ textarea {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .chat-bar-icons {
     display: flex;
     justify-content: space-evenly;
@@ -365,11 +384,21 @@ textarea {
 
 .userText {
   color: #fff;
-  font-family: Helvetica;
+  font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   font-weight: normal;
   text-align: right;
   clear: both;
+}
+@media screen and (max-width:767px) {
+  .userText {
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+  }
 }
 /* 유저가 보내는 텍스트 */
 .userText span {
@@ -386,7 +415,7 @@ textarea {
 
 .botText {
   color: #000;
-  font-family: Helvetica;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
   font-size: 16px;
   text-align: left;
@@ -410,19 +439,13 @@ textarea {
   -ms-overflow-style: none;
 }
 
-@media screen and (max-width:768px) {
-  .botText span {
-    line-height: 1.5em;
-    display: inline-block;
-    background-color: #e0e0e0;
-    padding: 10px;
-    border-radius: 8px;
-    border-bottom-left-radius: 2px;
-    max-width: 80%;
-    max-height: 410px;
-    margin-left: 10px;
-    animation: floatup 0.5s forwards;
-    overflow-y: auto;
+@media screen and (max-width:767px) {
+  .botText {
+    color: #000;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    font-size: 10px;
+    text-align: left;
   }
 }
 @media screen and (max-width:320px) {
@@ -526,7 +549,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .full-chat-block {
     width: 100%;
     border-radius: 0px;
@@ -541,6 +564,9 @@ textarea {
 
   .collapsible {
     width: 100%;
+    font-size: 32px;
+    text-align: center;
+    clear: both;
     border: 0px;
     border-top: 3px solid #fff;
     border-radius: 0px;
@@ -556,7 +582,7 @@ textarea {
   border: 3px solid #006276;
 }
 /*위 우 아래 좌*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   #slider {
     height: 200px;
     width: 98%;
@@ -594,7 +620,7 @@ textarea {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .button-box {
     visibility: hidden;
   }
@@ -605,11 +631,16 @@ a:last-child {
 }
 
 /*달력*/
+
+#calendar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
 #calendar {
   width: 500px;
   height: 240px;
   margin: 0 auto;
   font-size: 12px;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .fc-toolbar {
@@ -628,6 +659,8 @@ a:last-child {
   background: grey;
   color: transparent;
   overflow: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   height: 4px;
 }
 .fc-more-popover {
@@ -648,11 +681,12 @@ a:last-child {
   padding: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   #calendar {
-    width: 240px;
+    width: 300px;
     margin: 0 auto;
-    font-size: 10px;
+    font-size: 8px;
+    font-family: 'Noto Sans KR', sans-serif;
   }
 }
 
@@ -768,6 +802,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 4px;
+}
+
+.fe_currently {
+  font-size: 8px;
 }
 
 #fe_temp {
@@ -779,4 +818,5 @@ img {
   border: 0;
   width: 100%;
   height: 185px;
+  font-size: 4px;
 }
